@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+
+
+void printArray(int arr[], int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        prinf("%d ", arr[i]);
+    }
+}
+
+
+int main(void)
+{
+    int const columns = 3; 
+    int const rows = 2;
+    int grades[][columns] = {
+        {12, 23, 45},
+        {64, 78, 89}
+    };
+    
+    for (int i = 0; i < rows; i++)
+    {
+        printArray(grades[i], columns);
+        printf("\n");
+        
+    }
+    return 0;
+}
